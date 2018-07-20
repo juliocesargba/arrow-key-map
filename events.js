@@ -6,24 +6,54 @@ $(document).ready(function() {
 	    e = e || window.event;
 
 	    if (e.keyCode == '38') {
-	        let button = $('#tsf > div.tsf-p > div.jsb > center > input[type="submit"]:nth-child(1)')
-	        if(button != undefined && $(button).is("input")){
-	        	$(button).trigger("click")
+			console.log("UP")
+	        let button = $('#main > div:nth-child(4) > div.col-md-5 > button');
+	        if(button != undefined && $(button).is("button")){
+	        	$(button).trigger("click");
 	        }else{
-	        	console.log("not found")
+	        	console.log("Ocorreu algum erro, recarregue a página por favor");
 	        }
 	        //UP
 
 	    }
 	    else if (e.keyCode == '40') {
-	        console.log("Down")
+			console.log("Down")
+			let button = $('#main > div:nth-child(5) > div.col-md-5 > button');
+	        if(button != undefined && $(button).is("button")){
+	        	$(button).trigger("click");
+	        }else{
+	        	console.log("Ocorreu algum erro, recarregue a página por favor");
+	        }
+	        
 	    }
 	    else if (e.keyCode == '37') {
-	       console.log("Esquerda")
+		   console.log("Esquerda")
+		   let button = $('#main > div:nth-child(7) > div.col-md-5 > button');
+	        if(button != undefined && $(button).is("button")){
+	        	$(button).trigger("click");
+	        }else{
+	        	console.log("Ocorreu algum erro, recarregue a página por favor");
+	        }
 	    }
 	    else if (e.keyCode == '39') {
-	       console.log("Direita")
-	    }
+
+		   console.log("Direita")
+		   let button = $('#main > div:nth-child(8) > div.col-md-5 > button');
+	        if(button != undefined && $(button).is("button")){
+	        	$(button).trigger("click");
+	        }else{
+	        	console.log("Ocorreu algum erro, recarregue a página por favor");
+			}
+			
+	    }else if(e.keyCode == '32'){
+			console.log("Espaço")
+			let button = $('#main > div:nth-child(6) > div.col-md-5 > button');
+	        if(button != undefined && $(button).is("button")){
+	        	$(button).trigger("click");
+	        }else{
+	        	console.log("Ocorreu algum erro, recarregue a página por favor");
+	        }
+		}
 
 	}
 });

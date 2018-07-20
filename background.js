@@ -4,7 +4,7 @@ chrome.runtime.onInstalled.addListener(function() {
         chrome.declarativeContent.onPageChanged.addRules([{
             conditions: [
                 new chrome.declarativeContent.PageStateMatcher({
-                    pageUrl: { urlContains: 'www.google.com.br' },
+                    pageUrl: { urlContains: 'dashboard.arest.io' },
                 }) ],
             actions: [ new chrome.declarativeContent.ShowPageAction() ]
         }]);
