@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "ArrowKeyMap",
+    "description": "Extension to listen to Arrow Keys to trigger button events on aREST platform",
+    "version": "1.0",
+    "author": "Julio César da Silva Gomes",
+   
+    "page_action": {
+        "default_icon": {
+            "19" : "icon.png"
+        },
+        "default_title": "ArrowKeyMap"
+    },
+
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "declarativeContent"
+    ],
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+
+    "content_scripts": [{
+        "js": ["jquery.js", "events.js"],
+        "css": ["sample.css"],
+        "matches": ["https://*.dashboard.arest.io/*"]
+    }]
+}
