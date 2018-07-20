@@ -1,4 +1,4 @@
-# Arro Key Map
+# Arrow Key Map
 A Chrome Extension to map Keyboard Arrow Keys to Buttons
 
 
